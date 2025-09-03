@@ -65,27 +65,33 @@
 }
 
 .LogoPasteleria {
-    width: 100px;
-    height: 100px;        
-    object-fit: cover;    
-    border-radius: 50%;   
-    border: 3px solid white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
-    /* Animación latido suave */
-    animation: heartbeat 3s infinite ease-in-out;
+  /* Animación latido suave */
+  animation: heartbeat 3s infinite ease-in-out;
 }
 
 @keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1);
-    }
-    40% {
-        transform: scale(1.03); /* apenas un poquito más grande */
-    }
-    70% {
-        transform: scale(0.98); /* un poquito más pequeño */
-    }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(1.03);
+    /* apenas un poquito más grande */
+  }
+
+  70% {
+    transform: scale(0.98);
+    /* un poquito más pequeño */
+  }
 }
 
 .mi-texto {
@@ -96,3 +102,102 @@
   background-color: #FFF5E1;
 }
 
+
+footer {
+  background: #1f2937;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  color: #d1d5db;
+  margin: 0.25rem 0;
+}
+
+.footer-links a {
+  display: block;
+  color: #d1d5db;
+  margin: 0.25rem 0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* Redes sociales */
+.social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.social svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.social .twitter {
+  background: #1DA1F2;
+}
+
+.social .twitter:hover {
+  background: #0d8ddb;
+}
+
+.social .facebook {
+  background: #1877F2;
+}
+
+.social .facebook:hover {
+  background: #145dbf;
+}
+
+.social .instagram {
+  background: #E1306C;
+}
+
+.social .instagram:hover {
+  background: #c91c5c;
+}
+
+/* Línea final */
+.footer-bottom {
+  border-top: 1px solid #374151;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
