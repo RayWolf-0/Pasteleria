@@ -204,14 +204,17 @@ footer {
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #FFF5E1; /* crema pastel */
-  color: #5D4037; /* marrón oscuro */
+  background-color: #FFF5E1;
+  /* crema pastel */
+  color: #5D4037;
+  /* marrón oscuro */
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #FFC0CB; /* rosa suave */
+  background-color: #FFC0CB;
+  /* rosa suave */
   padding: 25px;
   text-align: center;
 }
@@ -219,7 +222,8 @@ header {
 header h1 {
   font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
-  color: #8B4513; /* chocolate */
+  color: #8B4513;
+  /* chocolate */
   margin: 0;
 }
 
@@ -236,7 +240,7 @@ header .slogan {
   background: #fff;
   border-radius: 15px;
   padding: 25px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .info-usuario {
@@ -285,6 +289,14 @@ header .slogan {
   border-radius: 8px;
 }
 
+.seccion div {
+  background: #FFF5E1;
+  border-left: 5px solid #FFC0CB;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
 .impacto {
   background: #FFC0CB22;
   border: 2px dashed #8B4513;
@@ -303,25 +315,30 @@ footer {
 
 /* Navbar personalizado Pastelería Mil Sabores */
 .pastel-navbar {
-  background-color: #FFF5E1; /* Fondo crema pastel */
-  border-bottom: 3px solid #FFC0CB; /* Detalle rosa */
+  background-color: #FFF5E1;
+  /* Fondo crema pastel */
+  border-bottom: 3px solid #FFC0CB;
+  /* Detalle rosa */
 }
 
 .pastel-navbar .navbar-brand {
   font-family: 'Pacifico', cursive;
   font-size: 1.8rem;
-  color: #8B4513 !important; /* Chocolate */
+  color: #8B4513 !important;
+  /* Chocolate */
 }
 
 .pastel-navbar .nav-link {
   font-family: 'Lato', sans-serif;
-  color: #5D4037 !important; /* Marrón oscuro */
+  color: #5D4037 !important;
+  /* Marrón oscuro */
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .pastel-navbar .nav-link:hover {
-  color: #8B4513 !important; /* Hover chocolate */
+  color: #8B4513 !important;
+  /* Hover chocolate */
   text-decoration: underline;
 }
 
@@ -358,4 +375,21 @@ footer {
   border-radius: 50%;
   border: 2px solid #FFC0CB;
   object-fit: cover;
+}
+
+.hProductos {
+  text-align: center;
+}
+
+.imgCarrusel {
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.button {
+  background-color: #FFC0CB;
+  border: none;
+  color: #5D4037;
+  font-weight: bold;
+  transition: 0.3s;
 }

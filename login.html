@@ -29,19 +29,22 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Blogs y Noticias</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Recetas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Consejos</a></li>
+                        <li class="nav-item"><a id="txtinicio" class="nav-link active" href="indice.html">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a id="txtlogin" class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a id="txtregistro" class="nav-link" href="registro.html">Registrarse</a>
+                        </li>
+                        <li class="nav-item"><a id="txtnoticias" class="nav-link" href="#">Blogs y Noticias</a></li>
+                        <li class="nav-item"><a id="txtrecetas" class="nav-link" href="perfil-usuario.html">Perfil</a>
+                        </li>
+                        <li class="nav-item"><a id="txtconsejos" class="nav-link" href="#">Consejos</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                            <a id="txtmenu" class="nav-link dropdown-toggle" href="menu.html" role="button"
                                 data-bs-toggle="dropdown">Menú</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Pasteles</a></li>
-                                <li><a class="dropdown-item" href="#">Galletas</a></li>
-                                <li><a class="dropdown-item" href="#">Dulces</a></li>
+                                <li><a class="dropdown-item" href="menu.html">Pasteles</a></li>
+                                <li><a class="dropdown-item" href="menu.html">Galletas</a></li>
+                                <li><a class="dropdown-item" href="menu.html">Dulces</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -68,10 +71,27 @@
                 <input type="password" name="contraseña" id="contrasena" class="form-control">
             </div>
             <div class="mb-3">
-                <button id="btnLogin" type="button" class="btn btn-secondary">Login</button>
+                <button id="btnLogin" class="btn button" type="button">Login</button>
             </div>
         </div>
     </main>
+    
+    <div class="modal fade" id="loginError" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Error</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Usuario o contraseña incorrecta</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
@@ -79,6 +99,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+<script src="js/validarusuario.js"></script>
 
 <footer>
     <div class="footer-container">
