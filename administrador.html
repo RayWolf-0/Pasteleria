@@ -16,174 +16,103 @@
 </head>
 
 <body>
-    <header>Pastelería Mil Sabores - Administrador</header>
+    <header>
+        <div id="header"></div>
+    </header>
 
-    <nav class="navbar navbar-expand-lg pastel-navbar">
-        <div class="container-fluid">
-            <img class="logo" src="assets/img/logopasteleria.png" alt="Logo Pastelería">
-            <a class="navbar-brand ms-3" href="#">Pastelería Mil Sabores</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a id="txtinicio" class="nav-link active" href="indice.html">Inicio</a>
-                    </li>
-                    <li class="nav-item"><a id="txtlogin" class="nav-link" href="login.html">Login</a></li>
-                    <li class="nav-item"><a id="txtregistro" class="nav-link" href="registro.html">Registrarse</a>
-                    </li>
-                    <li class="nav-item"><a id="txtnoticias" class="nav-link" href="https://www.duoc.cl/noticias/">Blogs
-                            y Noticias</a></li>
-                    <li class="nav-item"><a id="txtrecetas" class="nav-link" href="perfil-usuario.html">Perfil</a></li>
-                    <li class="nav-item"><a id="txtconsejos" class="nav-link" href="#">Consejos</a></li>
-                    <li class="nav-item dropdown">
-                        <a id="txtmenu" class="nav-link dropdown-toggle" href="menu.html" role="button"
-                            data-bs-toggle="dropdown">Menú</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="menu.html">Pasteles</a></li>
-                            <li><a class="dropdown-item" href="menu.html">Galletas</a></li>
-                            <li><a class="dropdown-item" href="menu.html">Dulces</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
-                    <button class="btn btn-buscar" type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="card">
-            <h2>Gestión de Usuarios</h2>
-            <table>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Email</th>
-                    <th>Rol</th>
-                    <th>Acciones</th>
-                </tr>
-                <tr>
-                    <td>Ana López</td>
-                    <td>ana@example.com</td>
-                    <td>Cliente</td>
-                    <td><button>Editar</button> <button>Eliminar</button></td>
-                </tr>
-                <tr>
-                    <td>Juan Soto</td>
-                    <td>juan@duoc.cl</td>
-                    <td>Cliente (Beneficio)</td>
-                    <td><button>Editar</button> <button>Eliminar</button></td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="card">
-            <h2>Gestión de Productos</h2>
-            <button>+ Agregar Producto</button>
-            <table>
-                <tr>
-                    <th>Código</th>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Acciones</th>
-                </tr>
-                <tr>
-                    <td>TC001</td>
-                    <td>Pastel Red Velvet</td>
-                    <td>$25.000</td>
-                    <td><button>Editar</button> <button>Eliminar</button></td>
-                </tr>
-                <tr>
-                    <td>PI002</td>
-                    <td>Pie de Limón</td>
-                    <td>$15.000</td>
-                    <td><button>Editar</button> <button>Eliminar</button></td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="card">
-            <h2>Gestión de Pedidos</h2>
-            <table>
-                <tr>
-                    <th>ID Pedido</th>
-                    <th>Cliente</th>
-                    <th>Producto</th>
-                    <th>Estado</th>
-                    <th>Acciones</th>
-                </tr>
-                <tr>
-                    <td>001</td>
-                    <td>Ana Pérez</td>
-                    <td>Galletas de Chocolate</td>
-                    <td>En preparación</td>
-                    <td><button>Actualizar</button></td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>Juan Soto</td>
-                    <td>Pastel de Fresa</td>
-                    <td>Entregado</td>
-                    <td><button>Actualizar</button></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-container">
-            <!-- Contacto -->
-            <div>
-                <h3 class="footer-title">Contacto</h3>
-                <p class="footer-text">📧 pasteleriamilsabores@gmail.com</p>
-                <p class="footer-text">📞 +569 9999 9999</p>
-                <p class="footer-text">📍 Santiago, Chile</p>
+    <main>
+        <div class="container">
+            <div class="card">
+                <h2 class="mi-texto">Gestión de Usuarios</h2>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                    <tr>
+                        <td>Ana López</td>
+                        <td>ana@example.com</td>
+                        <td>Cliente</td>
+                        <td><button class="btn button" type="button">Editar</button> <button class="btn button"
+                                type="button">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Juan Soto</td>
+                        <td>juan@duoc.cl</td>
+                        <td>Cliente (Beneficio)</td>
+                        <td><button class="btn button" type="button">Editar</button> <button class="btn button"
+                                type="button">Eliminar</button></td>
+                    </tr>
+                </table>
             </div>
 
-            <!-- Enlaces -->
-            <div>
-                <h3 class="footer-title">Enlaces</h3>
-                <div class="footer-links">
-                    <a href="#">Inicio</a>
-                    <a href="#">Servicios</a>
-                    <a href="#">Acerca de</a>
-                    <a href="#">Contacto</a>
-                </div>
+            <div class="card">
+                <h2 class="mi-texto">Gestión de Productos</h2>
+                <button class="btn button" type="button">+ Agregar Producto</button>
+                <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                    <tr>
+                        <td>TC001</td>
+                        <td>Pastel Red Velvet</td>
+                        <td>$25.000</td>
+                        <td><button class="btn button" type="button">Editar</button> <button class="btn button"
+                                type="button">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>PI002</td>
+                        <td>Pie de Limón</td>
+                        <td>$15.000</td>
+                        <td><button class="btn button" type="button">Editar</button> <button class="btn button"
+                                type="button">Eliminar</button></td>
+                    </tr>
+                </table>
             </div>
 
-            <!-- Redes sociales -->
-            <div>
-                <h3 class="footer-title">Síguenos</h3>
-                <div class="social">
-                    <a href="#" class="twitter">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M24 4.557c-..." />
-                        </svg>
-                    </a>
-                    <a href="#" class="facebook">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M22.46 6c-..." />
-                        </svg>
-                    </a>
-                    <a href="#" class="instagram">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12.017 0c-..." />
-                        </svg>
-                    </a>
-                </div>
+            <div class="card">
+                <h2 class="mi-texto">Gestión de Pedidos</h2>
+                <table>
+                    <tr>
+                        <th>ID Pedido</th>
+                        <th>Cliente</th>
+                        <th>Producto</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Ana Pérez</td>
+                        <td>Galletas de Chocolate</td>
+                        <td>En preparación</td>
+                        <td><button class="btn button" type="button">Actualizar</button></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Juan Soto</td>
+                        <td>Pastel de Fresa</td>
+                        <td>Entregado</td>
+                        <td><button class="btn button" type="button">Actualizar</button></td>
+                    </tr>
+                </table>
             </div>
         </div>
+    </main>
 
-        <div class="footer-bottom">
-            © 2025 Mi Página Web. Todos los derechos reservados.
-        </div>
-    </footer>
+
+
+
+
+    <div id="footer"></div>
+
+
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 
 <script src="js/utils/validarUsuario.js"></script>
