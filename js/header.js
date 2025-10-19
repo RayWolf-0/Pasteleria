@@ -1,5 +1,5 @@
 document.getElementById("header").innerHTML = `
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
              <nav class="navbar navbar-expand-lg pastel-navbar">
             <div class="container-fluid">
                 <img class="logo" src="assets/img/logopasteleria.png" alt="Logo Pastelería">
@@ -30,6 +30,9 @@ document.getElementById("header").innerHTML = `
                                 <li><a class="dropdown-item" href="menu.html">Galletas</a></li>
                                 <li><a class="dropdown-item" href="menu.html">Dulces</a></li>
                                 <li><a class="dropdown-item" href="administrador.html">Administrador</a></li>
+                                <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                                <li><a class="dropdown-item" href="carrito.html">Carrito</a></li>
+                                <li><a class="dropdown-item" href="pedido.html">Pedidos</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Pedidos - Pastelería Mil Sabores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!--Links Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+
+
+    <div class="container">
+        <br>
+        <div class="card">
+            <h2>Estado Actual de tu Pedido</h2>
+            <p>Consulta aquí el progreso de tu pedido más reciente.</p>
+            <br>
+            <div class="estado-pedido">
+                <p><strong>ID Pedido:</strong> #004</p>
+                <p><strong>Cliente:</strong> Ana Pérez</p>
+                <p><strong>Producto:</strong> Torta Especial de Cumpleaños</p>
+                <p><strong>Fecha de Pedido:</strong> 17 de octubre de 2025</p>
+
+                <div class="progreso">
+                    <div class="etapa completada">Preparando</div>
+                    <div class="etapa completada">En Ruta</div>
+                    <div class="etapa actual">Entregando</div>
+                    <div class="etapa pendiente">Completado</div>
+                </div>
+
+                <p class="mensaje-estado">
+                    🚚 Tu pedido está <strong>en proceso de entrega</strong>.
+                    ¡Pronto podrás disfrutar tu torta personalizada!
+                </p>
+            </div>
+            
+        </div>
+        <br>
+        <div class="card">
+            <br>
+            <h2>Historial de Pedidos Anteriores</h2>
+            <table>
+                <tr>
+                    <th>ID Pedido</th>
+                    <th>Producto</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                </tr>
+                <tr>
+                    <td>#003</td>
+                    <td>Torta Circular de Manjar</td>
+                    <td>10/10/2025</td>
+                    <td>Completado ✅</td>
+                </tr>
+                <tr>
+                    <td>#002</td>
+                    <td>Brownie Sin Gluten</td>
+                    <td>02/10/2025</td>
+                    <td>Completado ✅</td>
+                </tr>
+                <tr>
+                    <td>#001</td>
+                    <td>Tiramisú Clásico</td>
+                    <td>25/09/2025</td>
+                    <td>Completado ✅</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+</body>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+
+</html>
