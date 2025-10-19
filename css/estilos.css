@@ -393,3 +393,22 @@ footer {
   font-weight: bold;
   transition: 0.3s;
 }
+
+footer {
+  background-color: #8B4513;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 0.9em;
+  border-top: 3px solid #FFC0CB;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
